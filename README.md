@@ -7,21 +7,21 @@ Essas dicas são baseadas na minha experiência trabalhando remotamente para emp
 - [Dicas de trabalho remoto pra gringa](#dicas-de-trabalho-remoto-pra-gringa)
   - [Índice](#índice)
   - [Processo seletivo](#processo-seletivo)
-    - [1. Entrevista com recrutamento](#1-entrevista-com-recrutamento)
-      - [Perguntas comuns nessa etapa](#perguntas-comuns-nessa-etapa)
-      - [Dicas](#dicas)
-    - [2. Entrevistas e testes técnicos](#2-entrevistas-e-testes-técnicos)
-      - [Possíveis desafios nessa etapa](#possíveis-desafios-nessa-etapa)
-      - [Dicas de estudo](#dicas-de-estudo)
-      - [Dicas - teste técnico](#dicas---teste-técnico)
-      - [Dicas - take home](#dicas---take-home)
-      - [Dicas - live coding](#dicas---live-coding)
-      - [Dicas - system design](#dicas---system-design)
-    - [3. Entrevista cultural](#3-entrevista-cultural)
-      - [Perguntas comuns nessa etapa](#perguntas-comuns-nessa-etapa-1)
-      - [Dicas](#dicas-1)
-    - [4. Reference check](#4-reference-check)
-    - [5. Oferta](#5-oferta)
+  - [1. Entrevista com recrutamento](#1-entrevista-com-recrutamento)
+    - [Perguntas comuns nessa etapa](#perguntas-comuns-nessa-etapa)
+    - [Dicas](#dicas)
+  - [2. Entrevistas e testes técnicos](#2-entrevistas-e-testes-técnicos)
+    - [Possíveis desafios nessa etapa](#possíveis-desafios-nessa-etapa)
+    - [Dicas de estudo](#dicas-de-estudo)
+    - [Dicas - teste técnico](#dicas---teste-técnico)
+    - [Dicas - take home](#dicas---take-home)
+    - [Dicas - live coding](#dicas---live-coding)
+    - [Dicas - system design](#dicas---system-design)
+  - [3. Entrevista cultural](#3-entrevista-cultural)
+    - [Perguntas comuns nessa etapa](#perguntas-comuns-nessa-etapa-1)
+    - [Dicas](#dicas-1)
+  - [4. Reference check](#4-reference-check)
+  - [5. Oferta](#5-oferta)
   - [Burocracias](#burocracias)
     - [Criando seu CNPJ](#criando-seu-cnpj)
     - [Impostos](#impostos)
@@ -40,11 +40,11 @@ Quando você é chamado para uma entrevista, você pode esperar que o processo t
 
 Espere que as entrevistas sejam **totalmente** em inglês (mesmo com brasileiros te entrevistando), prepare-se para isso.
 
-### 1. Entrevista com recrutamento
+## 1. Entrevista com recrutamento
 
 Essa etapa (eliminatória) é basicamente uma entrevista de RH para entender suas experiências, objetivos de carreira e porquê você está buscando uma vaga nessa empresa.
 
-#### Perguntas comuns nessa etapa
+### Perguntas comuns nessa etapa
 
 - Por que você está buscando uma vaga nessa empresa?
 - Expectativa salarial (em dólares)
@@ -55,7 +55,7 @@ Essa etapa (eliminatória) é basicamente uma entrevista de RH para entender sua
   - Quais foram os desafios?
   - Quais foram as tecnologias envolvidas?
 
-#### Dicas
+### Dicas
 
 - Não minta, quem tem bastante experiência em entrevistas consegue saber quando a pessoa está mentindo.
 - Tenha alguns projetos em mente antes dessa conversa, recomendo utilizar o [método STAR](https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/).
@@ -67,11 +67,11 @@ Essa etapa (eliminatória) é basicamente uma entrevista de RH para entender sua
   - Interesse pelo mercado;
   - Trabalhar com tecnologia X;
 
-### 2. Entrevistas e testes técnicos
+## 2. Entrevistas e testes técnicos
 
 Passando da entrevista com recrutamento, a próxima fase geralmente são as entrevistas técnicas (mas é possível que seja com o seu possível líder).
 
-#### Possíveis desafios nessa etapa
+### Possíveis desafios nessa etapa
 
 - Teste técnico com tempo limitado
 - Take home project (exercício para fazer async)
@@ -83,7 +83,7 @@ Passando da entrevista com recrutamento, a próxima fase geralmente são as entr
   - Perguntas sobre design patterns
   - Perguntas sobre arquitetura de software
 
-#### Dicas de estudo
+### Dicas de estudo
 
 Para vagas em startups mais consolidadas recomendo estudar algoritmos e estrutura de dados.
 
@@ -95,11 +95,9 @@ Na minha experiência, as vagas com foco maior em **backend** são as que têm m
 
 Recomendo usar o [Great Frontend](https://www.greatfrontend.com/) pra treinar.
 
-System Design costuma ter só em vagas sênior pra cima (sênior, lead, staff, principal).
+---
 
-Recomendo estudar o [Designing Data-Intensive Applications](https://dataintensive.net/buy.html) e o [System Design Interview](https://www.amazon.com/System-Design-Interview-insiders-Second/dp/B08CMF2CQF).
-
-#### Dicas - teste técnico
+### Dicas - teste técnico
 
 Pra testes com tempo, geralmente as empresas utilizam alguma plataforma como o [HackerRank](https://www.hackerrank.com/).
 
@@ -111,7 +109,9 @@ Se nunca fez um teste técnico cronometrado, recomendo treinar alguns desafios `
 
 Essa dica também serve para treinar para live coding.
 
-#### Dicas - take home
+---
+
+### Dicas - take home
 
 Leia bem os requisitos do desafio antes de começar a resolver, caso tenha alguma dúvida, mande mensagem pro recrutador pra entender melhor o que é esperado.
 
@@ -144,9 +144,11 @@ Outro ponto para se preparar é saber explicar os motivos das decisões de desig
 
 Isso é bem importante, ainda mais com ferramentas de AI como o Cursor que se a pessoa souber utilizar, ela pode fazer toda a solução para você, então questionar as suas decisões técnicas é importante pra empresa saber se você sabe o que está fazendo ou se só sabe utilizar ferramentas de AI.
 
-#### Dicas - live coding
+---
 
-1. Tire todas as suas dúvidas
+### Dicas - live coding
+
+**1. Tire todas as suas dúvidas**
 
 Mesmo que você já tenha se deparado com um problema parecido ou igual nos seus estudos, é bom tirar todas as dúvidas sobre possíveis edge cases e tradeoffs que podem estar implícitos, mas é sempre melhor estar 100% claro.
 
@@ -156,7 +158,7 @@ Já fiz entrevistas que claramente é esperado que o candidato faça perguntas p
 
 Nunca comece a implementar antes de ter o escopo claro.
 
-2. Comunicação
+**2. Comunicação**
 
 Mesmo que o entrevistador tenha aplicado esse mesmo desafio centenas de vezes, é importante que você vá comunicando o seu racional **antes** de implementar.
 
@@ -188,6 +190,8 @@ Eu gosto de ir falando a lógica enquanto vou implementando, por alguns motivos:
 Digamos que você não lembre como implementar um hashmap, e sim como implementar um `for` loop. Primeiro implemente o problema com o `for` loop, depois pense em como otimizar.
 
 Não adianta você tentar a solução ideal de um problema e não conseguir implementá-la a tempo, resolva primeiro com força bruta e depois otimize.
+
+**3. Parte técnica**
 
 **Teste cada parte do seu código**
 
@@ -229,7 +233,9 @@ Para desafios de frontend:
 
 Remova qualquer código morto ou logs que você utilizou para debuggar.
 
-#### Dicas - system design
+---
+
+### Dicas - system design
 
 Pra essa fase, recomendo estudar boas práticas de arquitetura de software e design patterns.
 
@@ -264,6 +270,8 @@ Também é importante se aprofundar em:
   - Infrastructure as Code (Terraform, CloudFormation)
   - Observabilidade (logs, monitoramento, tracing)
 
+Recomendo estudar o [Designing Data-Intensive Applications](https://dataintensive.net/buy.html) e o [System Design Interview](https://www.amazon.com/System-Design-Interview-insiders-Second/dp/B08CMF2CQF) pra essa fase.
+
 Além de saber o que essas tecnologias fazem, é importante saber os **casos de uso mais comuns de cada uma** e como elas podem ser aplicadas no contexto do problema que você está resolvendo.
 
 Por exemplo, você sabe que o Redis é um banco de dados em memória, mas qual a utilidade dele em um sistema distribuído?
@@ -281,22 +289,25 @@ Pra startups especificamente, além da parte técnica, é importante ter em ment
 
 Na hora da entrevista, lembre também de:
 
-1. **Clarificar requisitos**: De novo, recomendo fazer perguntas pra entender os requisitos funcionais e não-funcionais
-2. **Começar pelo alto nível**: Inicie com um diagrama de arquitetura simplificado, e vai evoluindo conforme a solução vai sendo discutida
-3. **Identificar gargalos**: Fale de forma **proativa** potenciais gargalos na sua solução e como você resolveria eles (se o entrevistador quiser mais detalhes, ele vai te perguntar, não vá muito a fundo para não perder tempo de entrevista)
-4. **Explicar tradeoffs**: Explique claramente os prós e contras das suas escolhas
+**1. Clarificar requisitos**: De novo, recomendo fazer perguntas pra entender os requisitos funcionais e não-funcionais
+
+**2. Começar pelo alto nível**: Inicie com um diagrama de arquitetura simplificado, e vai evoluindo conforme a solução vai sendo discutida
+
+**3. Identificar gargalos**: Fale de forma **proativa** potenciais gargalos na sua solução e como você resolveria eles (se o entrevistador quiser mais detalhes, ele vai te perguntar, não vá muito a fundo para não perder tempo de entrevista)
+
+**4. Explicar tradeoffs**: Explique claramente os prós e contras das suas escolhas
 
 O mais importante dessa fase é o entrevistador entender como você pensa sobre o problema e como você aborda o problema, o que você aprendeu com suas experiências passadas e como você utiliza esses conhecimentos para resolver problemas de arquitetura.
 
 Não há respostas certas, o importante é demonstrar conhecimento e aprendizados de um bom desenvolvedor sênior.
 
-### 3. Entrevista cultural
+## 3. Entrevista cultural
 
 Essa etapa é basicamente uma conversa com o seu possível líder e/ou fundadores para entender como você se encaixa na cultura da empresa.
 
 É possível que tenha algum componente técnico nessa entrevista, mas geralmente é mais uma conversa sobre como você se encaixaria na cultura da empresa e do time.
 
-#### Perguntas comuns nessa etapa
+### Perguntas comuns nessa etapa
 
 - Por que você quer trabalhar nessa empresa?
 - Qual foi o pior feedback que você já recebeu e como você reagiu a ele?
@@ -306,14 +317,14 @@ Essa etapa é basicamente uma conversa com o seu possível líder e/ou fundadore
 - Como você geralmente aprende novas tecnologias?
 - Quais são suas expectativas com o cargo?
 
-#### Dicas
+### Dicas
 
 - Seja objetivo nas respostas, caso a pessoa queira saber mais detalhes, ela vai te perguntar.
 - Antes da entrevista, relembre os projetos mais relevantes da sua carreira e como foi sua participação neles (igual na entrevista com recrutamento, mas com um nível mais aprofundado de tecnologia e impacto).
 - De novo, não minta sobre suas experiências, o mundo de tecnologia é pequeno e não vale a pena se queimar.
 - Faça perguntas sobre a empresa, sobre o cargo, sobre a equipe, sobre o ambiente de trabalho, sobre a empresa em si, essa entrevista é uma oportunidade pra você conhecer mais sobre a empresa, a vaga e o time que você trabalharia.
 
-### 4. Reference check
+## 4. Reference check
 
 Essa etapa é menos comum mas se fizer parte do processo, é uma etapa para a empresa validar suas experiências e também para entender como é trabalhar com você.
 
@@ -321,7 +332,7 @@ Geralmente te pedem para fornecer alguns contatos de ex-colegas e líderes diret
 
 Antes de fornecer esses contatos, recomendo conversar com eles para saber se tudo bem mandar o contato deles.
 
-### 5. Oferta
+## 5. Oferta
 
 Se tudo deu certo, a empresa vai marcar uma reunião com você para fazer a oferta ou já te enviar uma oferta por email.
 
