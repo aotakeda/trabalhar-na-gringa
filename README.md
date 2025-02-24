@@ -1,15 +1,22 @@
-# Índice
+# Dicas de trabalho remoto pra gringa
 
-- [Índice](#índice)
-  - [Dicas de trabalho remoto pra gringa](#dicas-de-trabalho-remoto-pra-gringa)
+Essas dicas são baseadas na minha experiência trabalhando remotamente para empresas no exterior.
+
+## Índice
+
+- [Dicas de trabalho remoto pra gringa](#dicas-de-trabalho-remoto-pra-gringa)
+  - [Índice](#índice)
   - [Processo seletivo](#processo-seletivo)
     - [1. Entrevista com recrutamento](#1-entrevista-com-recrutamento)
       - [Perguntas comuns nessa etapa](#perguntas-comuns-nessa-etapa)
       - [Dicas](#dicas)
-    - [2. Entrevistas técnicas](#2-entrevistas-técnicas)
+    - [2. Entrevistas e testes técnicos](#2-entrevistas-e-testes-técnicos)
       - [Possíveis desafios nessa etapa](#possíveis-desafios-nessa-etapa)
       - [Dicas de estudo](#dicas-de-estudo)
+      - [Dicas - teste técnico](#dicas---teste-técnico)
+      - [Dicas - take home](#dicas---take-home)
       - [Dicas - live coding](#dicas---live-coding)
+      - [Dicas - system design](#dicas---system-design)
     - [3. Entrevista cultural](#3-entrevista-cultural)
       - [Perguntas comuns nessa etapa](#perguntas-comuns-nessa-etapa-1)
       - [Dicas](#dicas-1)
@@ -20,10 +27,6 @@
     - [Impostos](#impostos)
     - [Plano de saúde](#plano-de-saúde)
   - [Contribuir](#contribuir)
-
-## Dicas de trabalho remoto pra gringa
-
-Essas dicas são baseadas na minha experiência trabalhando remotamente para empresas no exterior.
 
 ## Processo seletivo
 
@@ -64,15 +67,16 @@ Essa etapa (eliminatória) é basicamente uma entrevista de RH para entender sua
   - Interesse pelo mercado;
   - Trabalhar com tecnologia X;
 
-### 2. Entrevistas técnicas
+### 2. Entrevistas e testes técnicos
 
 Passando da entrevista com recrutamento, a próxima fase geralmente são as entrevistas técnicas (mas é possível que seja com o seu possível líder).
 
 #### Possíveis desafios nessa etapa
 
+- Teste técnico com tempo limitado
+- Take home project (exercício para fazer async)
 - Live coding (desafio técnico de programação)
 - System design (desafio de arquitetura)
-- Take home project (exercício para fazer async)
 - Conversa técnica (um pouco mais rara que as outras)
   - Perguntas sobre projetos anteriores
   - Perguntas sobre linguagens e frameworks
@@ -94,6 +98,51 @@ Recomendo usar o [Great Frontend](https://www.greatfrontend.com/) pra treinar.
 System Design costuma ter só em vagas sênior pra cima (sênior, lead, staff, principal).
 
 Recomendo estudar o [Designing Data-Intensive Applications](https://dataintensive.net/buy.html) e o [System Design Interview](https://www.amazon.com/System-Design-Interview-insiders-Second/dp/B08CMF2CQF).
+
+#### Dicas - teste técnico
+
+Pra testes com tempo, geralmente as empresas utilizam alguma plataforma como o [HackerRank](https://www.hackerrank.com/).
+
+Antes de fazer o teste, teste a plataforma, veja as features disponíveis e depois de entender como ela funciona, já pode começar a fazer o teste.
+
+Geralmente eles te pedem para resolver um problema técnico, algo não tão complexo, mas se você não tiver prática, pode ser bem difícil.
+
+Se nunca fez um teste técnico cronometrado, recomendo treinar alguns desafios `easy` e `medium` no [Leetcode](https://leetcode.com/) antes de fazer o teste, com tempo cronometrado pra você se acostumar com a pressão do tempo.
+
+Essa dica também serve para treinar para live coding.
+
+#### Dicas - take home
+
+Leia bem os requisitos do desafio antes de começar a resolver, caso tenha alguma dúvida, mande mensagem pro recrutador pra entender melhor o que é esperado.
+
+Cada teste varia muito de uma empresa pra outra, mas geralmente eles te pedem para criar uma API, app full-stack ou algo assim.
+
+Tenha certeza que está cumprindo os requisitos e não esqueça de testar a aplicação.
+
+Coloque-se no lugar da pessoa que vai revisar o seu teste, o que você gostaria que tivesse na solução de um candidato?
+
+O que eu costumo fazer nesses testes é:
+
+- Criar um README com:
+  - arquitetura do projeto
+  - tradeoffs
+  - decisões de design
+  - racional da escolha das tecnologias
+  - como executar o projeto
+  - como rodar os testes
+  - link pra um vídeo de demo
+- Testes unitários
+- Dockerizar a aplicação
+- Concerns bem separados
+- Código simples, de fácil entendimento, nomes auto-explicativos
+
+Busque fazer a sua solução a mais simples possível, evite over engineering e utilizar bibliotecas externas o máximo possível (mas claro, caso esteja explícito nos requisitos que é para usar alguma específica, utilize).
+
+Muitas empresas se você passar dessa fase, podem fazer o live coding com base no seu teste. Então, pense em como deixar o código extensível e reutilizável pra você melhorar suas chances na próxima fase.
+
+Outro ponto para se preparar é saber explicar os motivos das decisões de design e tradeoffs que você fez na sua solução. Isso pode ser cobrado numa próxima fase.
+
+Isso é bem importante, ainda mais com ferramentas de AI como o Cursor que se a pessoa souber utilizar, ela pode fazer toda a solução para você, então questionar as suas decisões técnicas é importante pra empresa saber se você sabe o que está fazendo ou se só sabe utilizar ferramentas de AI.
 
 #### Dicas - live coding
 
@@ -180,9 +229,72 @@ Para desafios de frontend:
 
 Remova qualquer código morto ou logs que você utilizou para debuggar.
 
+#### Dicas - system design
+
+Pra essa fase, recomendo estudar boas práticas de arquitetura de software e design patterns.
+
+Além disso, estude conceitos de:
+
+- cloud computing (geralmente não é obrigatório saber tudo sobre AWS por exemplo, mas é bom saber os conceitos que são base de todas as soluções cloud);
+- escalabilidade;
+- performance;
+- segurança;
+- banco de dados;
+- microserviços e monolitos;
+
+Também é importante se aprofundar em:
+
+- **Modelos de Consistência**: Consistência forte, eventual e causal; teorema CAP
+- **Padrões Arquiteturais**:
+
+  - Arquitetura baseada em eventos
+  - CQRS (Command Query Responsibility Segregation)
+  - Arquitetura serverless
+  - Padrões de API gateway
+
+- **Sistemas Distribuídos**:
+
+  - Service discovery
+  - Cache distribuído (Redis, Memcached)
+  - Mensageria (Kafka, RabbitMQ)
+
+- **Infraestrutura**:
+
+  - Conteinerização (Docker) e orquestração (Kubernetes)
+  - Infrastructure as Code (Terraform, CloudFormation)
+  - Observabilidade (logs, monitoramento, tracing)
+
+Além de saber o que essas tecnologias fazem, é importante saber os **casos de uso mais comuns de cada uma** e como elas podem ser aplicadas no contexto do problema que você está resolvendo.
+
+Por exemplo, você sabe que o Redis é um banco de dados em memória, mas qual a utilidade dele em um sistema distribuído?
+
+Você sabe que Kubernetes é uma plataforma de orquestração de containers, mas ele seria útil em uma aplicação com 100 usuários ativos mensais e só um dev faz-tudo (desenvolvimento, infra, conversar com cliente, etc.) no time?
+
+Esse [site](https://www.geeksforgeeks.org/top-10-system-design-interview-questions-and-answers/) tem uma lista com os 10 casos mais comuns de system design e os racionais de cada uma dessas soluções.
+
+Pra startups especificamente, além da parte técnica, é importante ter em mente esses pontos também:
+
+- Relação custo-benefício, seja em termos de tempo de desenvolvimento, custos, escalabilidade, performance, etc.
+- Considerações sobre time-to-market (quanto antes a solução estiver no ar com clientes testando, melhor, a iteração rápida é essencial)
+- Designs flexíveis que se adaptam às necessidades do negócio (é muito comum em startups criar MVPs com uma solução em mente mas ter que mudar completamente com o feedback do mercado)
+- Soluções simples que minimizam o trabalho de manutenção
+
+Na hora da entrevista, lembre também de:
+
+1. **Clarificar requisitos**: De novo, recomendo fazer perguntas pra entender os requisitos funcionais e não-funcionais
+2. **Começar pelo alto nível**: Inicie com um diagrama de arquitetura simplificado, e vai evoluindo conforme a solução vai sendo discutida
+3. **Identificar gargalos**: Fale de forma **proativa** potenciais gargalos na sua solução e como você resolveria eles (se o entrevistador quiser mais detalhes, ele vai te perguntar, não vá muito a fundo para não perder tempo de entrevista)
+4. **Explicar tradeoffs**: Explique claramente os prós e contras das suas escolhas
+
+O mais importante dessa fase é o entrevistador entender como você pensa sobre o problema e como você aborda o problema, o que você aprendeu com suas experiências passadas e como você utiliza esses conhecimentos para resolver problemas de arquitetura.
+
+Não há respostas certas, o importante é demonstrar conhecimento e aprendizados de um bom desenvolvedor sênior.
+
 ### 3. Entrevista cultural
 
 Essa etapa é basicamente uma conversa com o seu possível líder e/ou fundadores para entender como você se encaixa na cultura da empresa.
+
+É possível que tenha algum componente técnico nessa entrevista, mas geralmente é mais uma conversa sobre como você se encaixaria na cultura da empresa e do time.
 
 #### Perguntas comuns nessa etapa
 
@@ -197,6 +309,7 @@ Essa etapa é basicamente uma conversa com o seu possível líder e/ou fundadore
 #### Dicas
 
 - Seja objetivo nas respostas, caso a pessoa queira saber mais detalhes, ela vai te perguntar.
+- Antes da entrevista, relembre os projetos mais relevantes da sua carreira e como foi sua participação neles (igual na entrevista com recrutamento, mas com um nível mais aprofundado de tecnologia e impacto).
 - De novo, não minta sobre suas experiências, o mundo de tecnologia é pequeno e não vale a pena se queimar.
 - Faça perguntas sobre a empresa, sobre o cargo, sobre a equipe, sobre o ambiente de trabalho, sobre a empresa em si, essa entrevista é uma oportunidade pra você conhecer mais sobre a empresa, a vaga e o time que você trabalharia.
 
