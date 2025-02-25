@@ -22,6 +22,7 @@ Essas dicas são baseadas na minha experiência trabalhando remotamente para emp
     - [Dicas](#dicas-1)
   - [4. Reference check](#4-reference-check)
   - [5. Oferta](#5-oferta)
+  - [Onde e como encontrar vagas](#onde-e-como-encontrar-vagas)
   - [Burocracias](#burocracias)
     - [Criando seu CNPJ](#criando-seu-cnpj)
     - [Impostos](#impostos)
@@ -350,6 +351,39 @@ Algumas perguntas importantes nessa etapa:
 - Há política de PTO (paid time off - famoso férias remuneradas)? Feriados nacionais estão incluídos?
 - Há benefícios como VA/VR, plano de saúde, etc. (incomum em caso de oferta contractor)?
 - Prazo para início do trabalho?
+
+## Onde e como encontrar vagas
+
+Encontrar vagas pra fora é um pouco diferente de encontrar vagas "normais" de empresas brasileiras.
+
+Algumas palavras-chave que te ajudam a descobrir se a vaga é pra gringa:
+
+- USD compensation
+- US Dollar ou US$
+- Worldwide
+- Work/remote from anywhere
+
+Esses são os sites e plataformas que uso quando quero encontrar vagas pra gringa:
+
+- [LinkedIn](https://www.linkedin.com/) (o mais conhecido mas tem que procurar palavras-chave na descrição da vaga)
+- [Wellfound](https://wellfound.com/jobs) (muito boa para encontrar vagas de startups)
+- [We Work Remotely](https://weworkremotely.com/)
+- [Work at a Startup](https://www.workatastartup.com/companies?demographic=any&hasEquity=any&hasSalary=any&industry=any&interviewProcess=any&jobType=any&layout=list-compact&locations=BR&remote=yes&remote=only&role=eng&sortBy=created_desc&tab=any&usVisaNotRequired=any) (vagas de startups da YC, a maior incubadora de startups do mundo)
+
+Além de encontrar nesses job boards, recomendo usar o Google utilizando booleanos pra encontrar vagas fora desses sites.
+
+Exemplo:
+
+```
+(site:lever.co OR site:greenhouse.io OR site:workday.com OR site:jobs.ashbyhq.com OR site:apply.workable.com OR site:breezy.hr OR site:smartrecruiters.com OR site:recruitee.com OR site:jobvite.com OR site:hirehive.com OR site:zoho.com OR site:taleo.net OR site:icims.com OR site:jazzhr.com) AND ("frontend engineer" OR frontend OR "front-end" OR "front end engineer" OR "front-end engineer" OR "full stack engineer" OR fullstack OR "full-stack" OR "product engineer" OR "fullstack engineer") AND (americas OR "south america" OR latam OR brazil OR "latin america" OR anywhere)
+```
+
+Explicando um pouco essa busca:
+
+- Cria um target mais específico em sites ATS (Applicant Tracking Systems) e nesse caso, vai buscar vagas com palavras-chave mais específicas como "frontend engineer" e "full stack engineer" e estando em inglês a chance de ser uma vaga pra gringa é maior.
+- Além desses cargos, o Google vai buscar outras palavras-chave como "remote" ou "work from anywhere" que estão na descrição da vaga.
+
+Recomendo mudar apenas a parte de cargos pra moldar a sua busca, mas não mude os sites de ATS ou as palavras-chave de localidade.
 
 ## Burocracias
 
