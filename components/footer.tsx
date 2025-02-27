@@ -3,8 +3,8 @@ import { Github, Linkedin } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-gray-50 border-t border-gray-200 py-12">
-      <div className="container mx-auto px-4">
+    <footer className="bg-gray-50 border-t border-gray-200 py-6 relative z-30 w-full mt-auto">
+      <div className="container mx-auto px-4 max-w-none">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <Link href="/" className="flex items-center">

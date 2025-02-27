@@ -59,7 +59,7 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.8 }}
             >
-              <Link href="#onde-e-como-encontrar-vagas">
+              <Link href="/guia">
                 <Button className="group rounded-full bg-gradient-to-r from-blue-600 to-green-600 px-4 py-4 text-xs text-white transition-all hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 sm:px-5 sm:py-5 sm:text-sm md:px-6 md:py-6 md:text-base">
                   Leia agora
                   <ArrowRight className="ml-1 h-3 w-3 sm:ml-2 sm:h-4 sm:w-4 transition-transform group-hover:translate-x-1" />
