@@ -1014,14 +1014,6 @@ export default function ProcessoSeletivoPage() {
           description="Se tudo deu certo, a empresa vai marcar uma reunião com você para fazer a oferta ou já te enviar uma oferta por email."
           badge="Etapa 5"
         >
-          <div>
-            <GradientHeading title="Oferta" />
-            <p className="text-sm md:text-base mb-6">
-              Se tudo deu certo, a empresa vai marcar uma reunião com você para
-              fazer a oferta ou já te enviar uma oferta por email.
-            </p>
-          </div>
-
           <Card className="bg-gradient-to-r from-slate-50 to-slate-100 border border-slate-200 my-6">
             <CardContent className="p-6 space-y-6 text-sm md:text-base">
               <p>
