@@ -111,10 +111,10 @@ export default function OndeEncontrarVagasPage() {
           Tracking Systems).
         </p>
 
-        <div className="my-6 p-5 bg-gradient-to-r from-slate-800 to-slate-900 border border-slate-700 relative group">
+        <div className="my-6 p-8 bg-gradient-to-r from-slate-800 to-slate-900 border border-slate-700 relative group">
           <button
             onClick={copyToClipboard}
-            className="absolute top-2 right-2 p-2 bg-slate-700/50 hover:bg-slate-700 text-slate-300 transition-opacity opacity-0 group-hover:opacity-100 focus:opacity-100"
+            className="absolute top-2 right-2 p-2 bg-slate-700/50 hover:bg-slate-700 text-slate-300 transition-opacity md:opacity-0 opacity-100 md:group-hover:opacity-100 focus:opacity-100"
             aria-label="Copy code"
           >
             {copied ? <Check size={16} /> : <Copy size={16} />}

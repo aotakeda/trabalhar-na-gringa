@@ -196,6 +196,19 @@ export default function ProcessoSeletivoPage() {
     "Considere otimizações após ter uma solução funcional",
   ];
 
+  const liveCodingExamples = [
+    {
+      title: "Estrutura de dados",
+      quote:
+        "For this challenge I believe using hashmaps is the best way forward because it has O(1) lookup time and it's pretty straightforward to implement.",
+    },
+    {
+      title: "Lógica de implementação",
+      quote:
+        "I'll use this hashmap to store the numbers and their indices. Then, I'll iterate through the array, and for each element, I'll check if the complement (target - current element) exists in the hashmap. If it does, I'll return the indices of the two numbers. If it doesn't, I'll add the current element and its index to the hashmap and continue until the pair is found.",
+    },
+  ];
+
   const culturalQuestions = [
     "Por que você quer trabalhar nessa empresa?",
     "Qual foi o pior feedback que você já recebeu e como você reagiu a ele?",
@@ -481,26 +494,28 @@ export default function ProcessoSeletivoPage() {
 
             <InfoAlert>
               Se nunca fez um teste técnico cronometrado, recomendo treinar
-              alguns desafios easy e medium no Leetcode antes de fazer o teste,
-              com tempo cronometrado pra você se acostumar com a pressão do
-              tempo.
+              alguns desafios <strong>easy</strong> e <strong>medium</strong> no
+              Leetcode antes de fazer o teste, com tempo cronometrado pra você
+              se acostumar com a pressão do tempo.
             </InfoAlert>
 
             <div className="grid gap-6 md:grid-cols-2 my-8">
               {typesOfTechnicalTests.map((test, index) => (
-                <div key={index} className="border bg-card p-6">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="flex h-12 p-3 w-12 items-center justify-center bg-gradient-to-br from-primary to-blue-600 text-white">
-                      {React.createElement(test.icon, {
-                        className: "h-5 w-5",
-                      })}
+                <Card key={index}>
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="flex h-12 p-3 w-12 items-center justify-center bg-gradient-to-br from-primary to-blue-600 text-white">
+                        {React.createElement(test.icon, {
+                          className: "h-5 w-5",
+                        })}
+                      </div>
+                      <h3 className="font-semibold text-lg">{test.title}</h3>
                     </div>
-                    <h3 className="font-semibold text-lg">{test.title}</h3>
-                  </div>
-                  <p className="text-muted-foreground text-sm md:text-base">
-                    {test.description}
-                  </p>
-                </div>
+                    <p className="text-muted-foreground text-sm md:text-base">
+                      {test.description}
+                    </p>
+                  </CardContent>
+                </Card>
               ))}
             </div>
 
@@ -508,19 +523,21 @@ export default function ProcessoSeletivoPage() {
 
             <div className="grid gap-6 md:grid-cols-2 my-8">
               {technicalTestConcepts.map((concept, index) => (
-                <div key={index} className="border bg-card p-6">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="flex h-12 p-3 w-12 items-center justify-center bg-gradient-to-br from-primary to-blue-600 text-white">
-                      {React.createElement(concept.icon, {
-                        className: "h-5 w-5",
-                      })}
+                <Card key={index}>
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="flex h-12 p-3 w-12 items-center justify-center bg-gradient-to-br from-primary to-blue-600 text-white">
+                        {React.createElement(concept.icon, {
+                          className: "h-5 w-5",
+                        })}
+                      </div>
+                      <h3 className="font-semibold text-lg">{concept.title}</h3>
                     </div>
-                    <h3 className="font-semibold text-lg">{concept.title}</h3>
-                  </div>
-                  <p className="text-muted-foreground text-sm md:text-base">
-                    {concept.description}
-                  </p>
-                </div>
+                    <p className="text-muted-foreground text-sm md:text-base">
+                      {concept.description}
+                    </p>
+                  </CardContent>
+                </Card>
               ))}
             </div>
 
@@ -528,18 +545,22 @@ export default function ProcessoSeletivoPage() {
 
             <div className="my-6 space-y-8">
               {technicalTestAdvanced.map((concept, index) => (
-                <div key={index} className="border bg-card p-6">
-                  <h3 className="font-semibold text-lg mb-3">
-                    {concept.title}
-                  </h3>
-                  <ul className="space-y-4 text-muted-foreground">
-                    {concept.items.map((item, itemIndex) => (
-                      <li key={itemIndex} className="text-sm md:text-base">
-                        • {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <Card key={index}>
+                  <CardHeader className="p-6 pb-3">
+                    <CardTitle className="font-semibold text-lg">
+                      {concept.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="px-6 pb-6 pt-0">
+                    <ul className="space-y-4 text-muted-foreground">
+                      {concept.items.map((item, itemIndex) => (
+                        <li key={itemIndex} className="text-sm md:text-base">
+                          • {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
               ))}
             </div>
 
@@ -632,19 +653,21 @@ export default function ProcessoSeletivoPage() {
 
             <div className="grid gap-6 md:grid-cols-2 my-8">
               {takeHomeProjectConcepts.map((concept, index) => (
-                <div key={index} className="border bg-card p-6">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="flex h-12 p-3 w-12 items-center justify-center bg-gradient-to-br from-primary to-blue-600 text-white">
-                      {React.createElement(concept.icon, {
-                        className: "h-5 w-5",
-                      })}
+                <Card key={index}>
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="flex h-12 p-3 w-12 items-center justify-center bg-gradient-to-br from-primary to-blue-600 text-white">
+                        {React.createElement(concept.icon, {
+                          className: "h-5 w-5",
+                        })}
+                      </div>
+                      <h3 className="font-semibold text-lg">{concept.title}</h3>
                     </div>
-                    <h3 className="font-semibold text-lg">{concept.title}</h3>
-                  </div>
-                  <p className="text-muted-foreground text-sm md:text-base">
-                    {concept.description}
-                  </p>
-                </div>
+                    <p className="text-muted-foreground text-sm md:text-base">
+                      {concept.description}
+                    </p>
+                  </CardContent>
+                </Card>
               ))}
             </div>
 
@@ -652,20 +675,19 @@ export default function ProcessoSeletivoPage() {
 
             <div className="my-6 space-y-3">
               {takeHomeProjectItems.map((item, index) => (
-                <div
-                  key={index}
-                  className="flex items-start gap-3 p-4 bg-secondary"
-                >
-                  <div className="mt-1.5 text-primary">
-                    <CheckCircle className="h-4 w-4 md:h-5 md:w-5" />
-                  </div>
-                  <div>
-                    <span className="font-medium">{item.title}</span>
-                    <p className="text-sm text-muted-foreground mt-1">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
+                <Card key={index} className="bg-secondary border-none">
+                  <CardContent className="p-4 flex items-start gap-3">
+                    <div className="mt-1.5 text-primary">
+                      <CheckCircle className="h-4 w-4 md:h-5 md:w-5" />
+                    </div>
+                    <div>
+                      <span className="font-medium">{item.title}</span>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        {item.description}
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
               ))}
             </div>
 
@@ -692,19 +714,21 @@ export default function ProcessoSeletivoPage() {
 
             <div className="grid gap-6 md:grid-cols-2 my-8">
               {liveCodingConcepts.map((concept, index) => (
-                <div key={index} className="border bg-card p-6">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="flex h-12 p-3 w-12 items-center justify-center bg-gradient-to-br from-primary to-blue-600 text-white">
-                      {React.createElement(concept.icon, {
-                        className: "h-5 w-5",
-                      })}
+                <Card key={index}>
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="flex h-12 p-3 w-12 items-center justify-center bg-gradient-to-br from-primary to-blue-600 text-white">
+                        {React.createElement(concept.icon, {
+                          className: "h-5 w-5",
+                        })}
+                      </div>
+                      <h3 className="font-semibold text-lg">{concept.title}</h3>
                     </div>
-                    <h3 className="font-semibold text-lg">{concept.title}</h3>
-                  </div>
-                  <p className="text-muted-foreground text-sm md:text-base">
-                    {concept.description}
-                  </p>
-                </div>
+                    <p className="text-muted-foreground text-sm md:text-base">
+                      {concept.description}
+                    </p>
+                  </CardContent>
+                </Card>
               ))}
             </div>
 
@@ -717,80 +741,71 @@ export default function ProcessoSeletivoPage() {
             <GradientHeading title="Exemplos de comunicação" />
 
             <div className="my-6 space-y-8">
-              {liveCodingTips[0] && (
-                <div className="border bg-card p-6">
-                  <h3 className="font-semibold text-lg mb-3">
-                    Estrutura de dados
-                  </h3>
-                  <div className="mt-2 p-3 bg-secondary text-sm">
-                    <p className="italic">
-                      "For this challenge I believe using hashmaps is the best
-                      way forward because it has O(1) lookup time and it's
-                      pretty straightforward to implement."
-                    </p>
-                  </div>
-                </div>
-              )}
-
-              {liveCodingTips[1] && (
-                <div className="border bg-card p-6">
-                  <h3 className="font-semibold text-lg mb-3">
-                    Lógica de implementação
-                  </h3>
-                  <div className="mt-2 p-3 bg-secondary text-sm">
-                    <p className="italic">
-                      "I'll use this hashmap to store the numbers and their
-                      indices. Then, I'll iterate through the array, and for
-                      each element, I'll check if the complement (target -
-                      current element) exists in the hashmap. If it does, I'll
-                      return the indices of the two numbers. If it doesn't, I'll
-                      add the current element and its index to the hashmap and
-                      continue until the pair is found."
-                    </p>
-                  </div>
-                </div>
-              )}
+              {liveCodingExamples.map((example, index) => (
+                <Card key={index}>
+                  <CardHeader className="p-6 pb-3">
+                    <CardTitle className="font-semibold text-lg">
+                      {example.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="px-6 pb-6 pt-0">
+                    <div className="mt-2 p-3 bg-secondary text-sm">
+                      <p className="italic">"{example.quote}"</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
 
             <GradientHeading title="Pontos a considerar" />
 
             <div className="my-6 grid gap-6 md:grid-cols-2">
-              <div className="border bg-card p-6">
-                <h3 className="font-semibold text-lg mb-3">Pontos gerais</h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li className="text-sm md:text-base">
-                    • Complexidade de tempo
-                  </li>
-                  <li className="text-sm md:text-base">
-                    • Complexidade de espaço
-                  </li>
-                  <li className="text-sm md:text-base">
-                    • Boas práticas de linguagem
-                  </li>
-                  <li className="text-sm md:text-base">
-                    • Legibilidade do código
-                  </li>
-                  <li className="text-sm md:text-base">• Extensibilidade</li>
-                  <li className="text-sm md:text-base">• Reusabilidade</li>
-                  <li className="text-sm md:text-base">• Testabilidade</li>
-                </ul>
-              </div>
+              <Card>
+                <CardHeader className="p-6 pb-3">
+                  <CardTitle className="font-semibold text-lg">
+                    Pontos gerais
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="px-6 pb-6 pt-0">
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="text-sm md:text-base">
+                      • Complexidade de tempo
+                    </li>
+                    <li className="text-sm md:text-base">
+                      • Complexidade de espaço
+                    </li>
+                    <li className="text-sm md:text-base">
+                      • Boas práticas de linguagem
+                    </li>
+                    <li className="text-sm md:text-base">
+                      • Legibilidade do código
+                    </li>
+                    <li className="text-sm md:text-base">• Extensibilidade</li>
+                    <li className="text-sm md:text-base">• Reusabilidade</li>
+                    <li className="text-sm md:text-base">• Testabilidade</li>
+                  </ul>
+                </CardContent>
+              </Card>
 
-              <div className="border bg-card p-6">
-                <h3 className="font-semibold text-lg mb-3">
-                  Para desafios de frontend
-                </h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li className="text-sm md:text-base">• Acessibilidade</li>
-                  <li className="text-sm md:text-base">• Performance</li>
-                  <li className="text-sm md:text-base">• Responsividade</li>
-                  <li className="text-sm md:text-base">• SEO</li>
-                  <li className="text-sm md:text-base">• Usabilidade</li>
-                  <li className="text-sm md:text-base">• Componentização</li>
-                  <li className="text-sm md:text-base">• Reusabilidade</li>
-                  <li className="text-sm md:text-base">• Extensibilidade</li>
-                </ul>
-              </div>
+              <Card>
+                <CardHeader className="p-6 pb-3">
+                  <CardTitle className="font-semibold text-lg">
+                    Para desafios de frontend
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="px-6 pb-6 pt-0">
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="text-sm md:text-base">• Acessibilidade</li>
+                    <li className="text-sm md:text-base">• Performance</li>
+                    <li className="text-sm md:text-base">• Responsividade</li>
+                    <li className="text-sm md:text-base">• SEO</li>
+                    <li className="text-sm md:text-base">• Usabilidade</li>
+                    <li className="text-sm md:text-base">• Componentização</li>
+                    <li className="text-sm md:text-base">• Reusabilidade</li>
+                    <li className="text-sm md:text-base">• Extensibilidade</li>
+                  </ul>
+                </CardContent>
+              </Card>
             </div>
           </div>
 
@@ -809,19 +824,21 @@ export default function ProcessoSeletivoPage() {
 
             <div className="grid gap-6 md:grid-cols-2 my-8">
               {systemDesignConcepts.map((concept, index) => (
-                <div key={index} className="border bg-card p-6">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="flex h-12 p-3 w-12 items-center justify-center bg-gradient-to-br from-primary to-blue-600 text-white">
-                      {React.createElement(concept.icon, {
-                        className: "h-5 w-5",
-                      })}
+                <Card key={index}>
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="flex h-12 p-3 w-12 items-center justify-center bg-gradient-to-br from-primary to-blue-600 text-white">
+                        {React.createElement(concept.icon, {
+                          className: "h-5 w-5",
+                        })}
+                      </div>
+                      <h3 className="font-semibold text-lg">{concept.title}</h3>
                     </div>
-                    <h3 className="font-semibold text-lg">{concept.title}</h3>
-                  </div>
-                  <p className="text-muted-foreground text-sm md:text-base">
-                    {concept.description}
-                  </p>
-                </div>
+                    <p className="text-muted-foreground text-sm md:text-base">
+                      {concept.description}
+                    </p>
+                  </CardContent>
+                </Card>
               ))}
             </div>
 
@@ -829,18 +846,22 @@ export default function ProcessoSeletivoPage() {
 
             <div className="my-6 space-y-8">
               {systemDesignAdvanced.map((concept, index) => (
-                <div key={index} className="border bg-card p-6">
-                  <h3 className="font-semibold text-lg mb-3">
-                    {concept.title}
-                  </h3>
-                  <ul className="space-y-4 text-muted-foreground">
-                    {concept.items.map((item, itemIndex) => (
-                      <li key={itemIndex} className="text-sm md:text-base">
-                        • {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <Card key={index}>
+                  <CardHeader className="p-6 pb-3">
+                    <CardTitle className="font-semibold text-lg">
+                      {concept.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="px-6 pb-6 pt-0">
+                    <ul className="space-y-4 text-muted-foreground">
+                      {concept.items.map((item, itemIndex) => (
+                        <li key={itemIndex} className="text-sm md:text-base">
+                          • {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
               ))}
             </div>
 
@@ -955,19 +976,29 @@ export default function ProcessoSeletivoPage() {
           description="Se tudo deu certo, a empresa vai marcar uma reunião com você para fazer a oferta ou já te enviar uma oferta por email."
           badge="Etapa 5"
         >
-          <div className="text-sm md:text-base space-y-6 bg-gradient-to-r from-slate-50 to-slate-100 p-6 border border-slate-200">
-            <p>
-              <strong>1.</strong> Leia a oferta com calma, não se sinta
-              pressionado a aceitar logo de cara, principalmente se tem outros
-              processos em andamento que queira ir até o final.
-            </p>
-            <p>
-              <strong>2.</strong> Caso tenha outros processos em andamento,
-              recomendo alinhar com o recrutador sobre o status de cada processo
-              e o prazo de resposta que você tem para dar aceitar ou não a
-              oferta.
+          <div>
+            <GradientHeading title="Oferta" />
+            <p className="text-sm md:text-base mb-6">
+              Se tudo deu certo, a empresa vai marcar uma reunião com você para
+              fazer a oferta ou já te enviar uma oferta por email.
             </p>
           </div>
+
+          <Card className="bg-gradient-to-r from-slate-50 to-slate-100 border border-slate-200 my-6">
+            <CardContent className="p-6 space-y-6 text-sm md:text-base">
+              <p>
+                <strong>1.</strong> Leia a oferta com calma, não se sinta
+                pressionado a aceitar logo de cara, principalmente se tem outros
+                processos em andamento que queira ir até o final.
+              </p>
+              <p>
+                <strong>2.</strong> Caso tenha outros processos em andamento,
+                recomendo alinhar com o recrutador sobre o status de cada
+                processo e o prazo de resposta que você tem para dar aceitar ou
+                não a oferta.
+              </p>
+            </CardContent>
+          </Card>
 
           <div>
             <GradientHeading title="Perguntas importantes nessa etapa" />
