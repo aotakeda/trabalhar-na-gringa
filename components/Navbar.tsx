@@ -53,7 +53,7 @@ export function Navbar() {
                 <NavigationMenuContent>
                   <div className="grid gap-3 p-4 w-[400px] md:w-[500px] lg:w-[600px]">
                     <Link href="#visao-geral" legacyBehavior passHref>
-                      <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                      <NavigationMenuLink className="block select-none space-y-1  p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
                         <div className="text-sm font-medium">Visão Geral</div>
                         <div className="line-clamp-2 text-xs text-muted-foreground">
                           O que esperar de um processo seletivo de empresas fora
@@ -68,7 +68,7 @@ export function Navbar() {
                         legacyBehavior
                         passHref
                       >
-                        <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                        <NavigationMenuLink className="block select-none space-y-1  p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
                           <div className="text-sm font-medium">
                             1. Entrevista com recrutamento
                           </div>
@@ -85,7 +85,7 @@ export function Navbar() {
                       >
                         <NavigationMenuLink
                           className={cn(
-                            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            "block select-none space-y-1  p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           )}
                         >
                           <div className="text-sm font-medium">
@@ -100,7 +100,7 @@ export function Navbar() {
                       <Link href="#entrevista-cultural" legacyBehavior passHref>
                         <NavigationMenuLink
                           className={cn(
-                            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            "block select-none space-y-1  p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           )}
                         >
                           <div className="text-sm font-medium">
@@ -114,7 +114,7 @@ export function Navbar() {
                       <Link href="#reference-check" legacyBehavior passHref>
                         <NavigationMenuLink
                           className={cn(
-                            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            "block select-none space-y-1  p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           )}
                         >
                           <div className="text-sm font-medium">
@@ -128,7 +128,7 @@ export function Navbar() {
                       <Link href="#oferta" legacyBehavior passHref>
                         <NavigationMenuLink
                           className={cn(
-                            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            "block select-none space-y-1  p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           )}
                         >
                           <div className="text-sm font-medium">5. Oferta</div>
@@ -154,7 +154,7 @@ export function Navbar() {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100"
+            className="md:hidden p-2  text-gray-700 hover:bg-gray-100"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
