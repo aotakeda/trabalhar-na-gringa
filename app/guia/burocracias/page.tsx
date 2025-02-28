@@ -5,6 +5,7 @@ import {
   InfoAlert,
   FeatureCard,
   ContentGrid,
+  NavigationCard,
 } from "@/components/guia";
 
 export default function BurocraciasPage() {
@@ -124,6 +125,15 @@ export default function BurocraciasPage() {
           barato vai ser o plano. Por isso, empresas de contabilidade geralmente
           ajudam com isso.
         </p>
+      </div>
+
+      <div className="mt-12">
+        <NavigationCard
+          prevLink={{
+            href: "/guia/processo-seletivo",
+            title: "Processo seletivo",
+          }}
+        />
       </div>
     </>
   );

@@ -6,6 +6,7 @@ import {
   GradientHeading,
   ContentGrid,
   FeatureCard,
+  NavigationCard,
 } from "@/components/guia";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useState } from "react";
@@ -138,6 +139,19 @@ export default function OndeEncontrarVagasPage() {
             </p>
           </CardContent>
         </Card>
+      </div>
+
+      <div className="mt-12">
+        <NavigationCard
+          prevLink={{
+            href: "/guia",
+            title: "Guia",
+          }}
+          nextLink={{
+            href: "/guia/processo-seletivo",
+            title: "Processo seletivo",
+          }}
+        />
       </div>
     </>
   );

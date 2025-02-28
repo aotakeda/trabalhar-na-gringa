@@ -1,5 +1,10 @@
 import { Briefcase, Globe, File } from "lucide-react";
-import { PageHeader, FeatureCard, ContentGrid } from "@/components/guia";
+import {
+  PageHeader,
+  FeatureCard,
+  ContentGrid,
+  NavigationCard,
+} from "@/components/guia";
 import { CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Card } from "@/components/ui/card";
 
@@ -68,6 +73,15 @@ export default function GuiaPage() {
           </p>
         </CardContent>
       </Card>
+
+      <div className="mt-12">
+        <NavigationCard
+          nextLink={{
+            href: "/guia/onde-e-como-encontrar-vagas",
+            title: "Onde e como encontrar vagas",
+          }}
+        />
+      </div>
     </>
   );
 }

@@ -24,6 +24,7 @@ import {
   ContentGrid,
   TimelineStep,
   QuestionCard,
+  NavigationCard,
 } from "@/components/guia";
 import Link from "next/link";
 import { TipsList } from "@/components/guia/TipsList";
@@ -1010,6 +1011,19 @@ export default function ProcessoSeletivoPage() {
           </div>
         </SectionCard>
       </section>
+
+      <div className="mt-12">
+        <NavigationCard
+          prevLink={{
+            href: "/guia/onde-e-como-encontrar-vagas",
+            title: "Onde e como encontrar vagas",
+          }}
+          nextLink={{
+            href: "/guia/burocracias",
+            title: "Burocracias",
+          }}
+        />
+      </div>
     </>
   );
 }
