@@ -471,66 +471,6 @@ export default function ProcessoSeletivoPage() {
             </ContentGrid>
           </div>
 
-          <Card className="bg-gradient-to-br from-slate-50 to-slate-100 border border-slate-200 my-8">
-            <CardHeader>
-              <CardTitle className="text-lg font-semibold">
-                Dicas de estudo
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4 text-sm md:text-base text-muted-foreground">
-              <p>
-                Para vagas em startups mais consolidadas recomendo estudar
-                algoritmos e estrutura de dados. Recomendo o livro{" "}
-                <Link
-                  href="https://pragprog.com/titles/jwdsal2/a-common-sense-guide-to-data-structures-and-algorithms-second-edition/"
-                  className="text-primary hover:text-primary/80 font-medium hover:underline inline-flex items-center gap-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  A Common-Sense Guide to Data Structures and Algorithms
-                </Link>
-                , o canal do{" "}
-                <Link
-                  href="https://www.youtube.com/@NeetCode"
-                  className="text-primary hover:text-primary/80 font-medium hover:underline inline-flex items-center gap-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Neetcode
-                </Link>{" "}
-                e a própria plataforma do{" "}
-                <Link
-                  href="https://leetcode.com"
-                  className="text-primary hover:text-primary/80 font-medium hover:underline inline-flex items-center gap-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Leetcode
-                </Link>
-                .
-              </p>
-              <p>
-                Na minha experiência, as vagas com foco maior em backend são as
-                que têm mais chances de teste técnico envolvendo algoritmos e
-                estruturas de dados.
-              </p>
-              <p>
-                É possível que vagas de front cobrem também, mas recomendo focar
-                em exercícios práticos envolvendo HTML, CSS, JS/TS puro e também
-                treinar frameworks como React e TailwindCSS. Recomendo usar o{" "}
-                <Link
-                  href="https://www.greatfrontend.com/"
-                  className="text-primary hover:text-primary/80 font-medium hover:underline inline-flex items-center gap-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Great Frontend
-                </Link>{" "}
-                pra treinar.
-              </p>
-            </CardContent>
-          </Card>
-
           <div id="tipos-testes-tecnicos" className="mt-12">
             <GradientHeading title="Tipos de testes técnicos" />
             <p className="text-sm md:text-base mb-6">
@@ -618,14 +558,14 @@ export default function ProcessoSeletivoPage() {
               <CardContent className="space-y-4 text-sm md:text-base text-muted-foreground">
                 <p>
                   Para vagas em startups mais consolidadas recomendo estudar
-                  algoritmos e estrutura de dados. Recomendo o livro{" "}
+                  algoritmos e estrutura de dados. Recomendo{" "}
                   <Link
                     href="https://pragprog.com/titles/jwdsal2/a-common-sense-guide-to-data-structures-and-algorithms-second-edition/"
                     className="text-primary hover:text-primary/80 font-medium hover:underline inline-flex items-center gap-1"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    A Common-Sense Guide to Data Structures and Algorithms
+                    este livro de algoritmos
                   </Link>
                   , o canal do{" "}
                   <Link
@@ -648,9 +588,15 @@ export default function ProcessoSeletivoPage() {
                   .
                 </p>
                 <p>
-                  Na minha experiência, as vagas com foco maior em backend são
-                  as que têm mais chances de teste técnico envolvendo algoritmos
-                  e estruturas de dados.
+                  Eu também tenho um site com conteúdos visuais pros algoritmos
+                  mais comuns em entrevistas, caso queira dar uma olhada, é o{" "}
+                  <Link
+                    href="https://standoutdev.com/visualize/algorithms"
+                    className="text-primary hover:text-primary/80 font-medium hover:underline inline-flex items-center gap-1"
+                  >
+                    Standout Dev
+                  </Link>
+                  .
                 </p>
                 <p>
                   É possível que vagas de front cobrem também, mas recomendo
