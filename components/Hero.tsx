@@ -73,7 +73,7 @@ export function HeroSection() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="relative mx-auto mt-8 flex h-[250px] w-full max-w-[300px] items-center justify-center sm:h-[300px] sm:max-w-[400px] md:h-[400px] md:mt-0 md:max-w-none lg:h-[600px]"
+          className="relative mx-auto mt-8 flex h-[300px] w-full max-w-[300px] items-center justify-center sm:h-[300px] sm:max-w-[400px] md:h-[400px] md:mt-0 md:max-w-none lg:h-[600px]"
         >
           <Globe className="absolute inset-0" />
         </motion.div>
