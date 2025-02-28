@@ -1,4 +1,4 @@
-import { Briefcase, Globe, File, ChevronRight } from "lucide-react";
+import { Briefcase, Globe, File, ChevronRight, Book } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -14,6 +14,11 @@ import {
 } from "@/components/ui/sidebar";
 
 const items = [
+  {
+    title: "Guia",
+    url: "/guia",
+    icon: Book,
+  },
   {
     title: "Onde e como encontrar vagas",
     url: "/guia/onde-e-como-encontrar-vagas",
@@ -60,7 +65,7 @@ export function AppSidebar() {
     <Sidebar collapsible="icon">
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Guia</SidebarGroupLabel>
+          <SidebarGroupLabel>Trabalhe pra Gringa</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
