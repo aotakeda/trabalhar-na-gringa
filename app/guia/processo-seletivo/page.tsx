@@ -157,10 +157,10 @@ export default function ProcessoSeletivoPage() {
   ];
 
   const takeHomeProjectTips = [
-    "Busque fazer a sua solução a mais simples possível, evite over engineering",
-    "Limite o uso de bibliotecas externas ao essencial (a menos que seja especificado nos requisitos)",
-    "Deixe o código extensível e reutilizável para facilitar futuras modificações",
-    "Prepare-se para explicar as decisões de design e tradeoffs que você fez na sua solução",
+    "Busque fazer a sua solução a mais simples possível, evite over engineering.",
+    "Limite o uso de bibliotecas externas ao essencial (a menos que seja especificado nos requisitos).",
+    "Deixe o código extensível e reutilizável para facilitar futuras modificações.",
+    "Prepare-se para explicar as decisões de design e tradeoffs que você fez na sua solução.",
   ];
 
   const liveCodingConcepts = [
@@ -191,10 +191,10 @@ export default function ProcessoSeletivoPage() {
   ];
 
   const liveCodingTips = [
-    "Tire todas as suas dúvidas sobre o problema antes de começar a implementar",
-    "Comunique seu plano de solução antes de começar a codificar",
-    "Teste seu código com exemplos simples e casos de borda",
-    "Considere otimizações após ter uma solução funcional",
+    "Tire todas as suas dúvidas sobre o problema antes de começar a implementar.",
+    "Comunique seu plano de solução antes de começar a codificar.",
+    "Teste seu código com exemplos simples e casos de borda.",
+    "Considere otimizações após ter uma solução funcional.",
   ];
 
   const liveCodingExamples = [
@@ -295,15 +295,6 @@ export default function ProcessoSeletivoPage() {
         "Observabilidade (logs, monitoramento, tracing)",
       ],
     },
-    {
-      title: "Além da parte técnica",
-      items: [
-        "Relação custo-benefício, seja em termos de tempo de desenvolvimento, custos, escalabilidade, performance, etc.",
-        "Considerações sobre time-to-market (quanto antes a solução estiver no ar com clientes testando, melhor, a iteração rápida é essencial)",
-        "Designs flexíveis que se adaptam às necessidades do negócio (é muito comum em startups criar MVPs com uma solução em mente mas ter que mudar completamente com o feedback do mercado)",
-        "Soluções simples que minimizam o trabalho de manutenção",
-      ],
-    },
   ];
 
   const typesOfTechnicalTests = [
@@ -325,7 +316,7 @@ export default function ProcessoSeletivoPage() {
     {
       title: "1. Clarificar requisitos",
       description:
-        "Recomendo fazer perguntas pra entender os requisitos funcionais e não-funcionais.",
+        "Faça perguntas pra entender os requisitos funcionais e não-funcionais.",
     },
     {
       title: "2. Começar pelo alto nível",
@@ -370,7 +361,7 @@ export default function ProcessoSeletivoPage() {
     },
   ];
 
-  const technicalTestAdvanced = [
+  const technicalTestWhatToStudy = [
     {
       title: "Algoritmos Fundamentais",
       items: [
@@ -406,15 +397,6 @@ export default function ProcessoSeletivoPage() {
         "Renderização e performance",
         "Acessibilidade e responsividade",
         "SEO e HTML semântico",
-      ],
-    },
-    {
-      title: "Além do código",
-      items: [
-        "Comunicação clara do seu raciocínio",
-        "Validação de inputs e tratamento de edge cases",
-        "Testes e verificação da solução",
-        "Refatoração e melhoria de código",
       ],
     },
   ];
@@ -542,10 +524,10 @@ export default function ProcessoSeletivoPage() {
               ))}
             </div>
 
-            <GradientHeading title="Conceitos avançados" />
+            <GradientHeading title="Plano de estudos" />
 
-            <div className="my-6 space-y-8">
-              {technicalTestAdvanced.map((concept, index) => (
+            <ContentGrid columns={2}>
+              {technicalTestWhatToStudy.map((concept, index) => (
                 <Card key={index}>
                   <CardHeader className="p-6 pb-3">
                     <CardTitle className="font-semibold text-lg">
@@ -563,7 +545,31 @@ export default function ProcessoSeletivoPage() {
                   </CardContent>
                 </Card>
               ))}
-            </div>
+            </ContentGrid>
+
+            <Card className="bg-gradient-to-br from-slate-50 to-slate-100 border border-slate-200 my-8">
+              <CardHeader>
+                <CardTitle className="text-lg font-semibold">
+                  Além do código
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="text-sm md:text-base space-y-4">
+                <p>
+                  <strong>1.</strong> Comunicação clara do seu raciocínio.
+                </p>
+                <p>
+                  <strong>2.</strong> Validação de inputs e tratamento de edge
+                  cases.
+                </p>
+                <p>
+                  <strong>3.</strong> Testes e verificação da solução.
+                </p>
+
+                <p>
+                  <strong>4.</strong> Refatoração e melhoria de código.
+                </p>
+              </CardContent>
+            </Card>
 
             <GradientHeading title="Dicas para se preparar" />
 
@@ -791,7 +797,7 @@ export default function ProcessoSeletivoPage() {
               <Card>
                 <CardHeader className="p-6 pb-3">
                   <CardTitle className="font-semibold text-lg">
-                    Para desafios de frontend
+                    Específico para Frontend
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="px-6 pb-6 pt-0">
@@ -843,9 +849,9 @@ export default function ProcessoSeletivoPage() {
               ))}
             </div>
 
-            <GradientHeading title="Conceitos avançados" />
+            <GradientHeading title="Plano de estudos" />
 
-            <div className="my-6 space-y-8">
+            <ContentGrid columns={2}>
               {systemDesignAdvanced.map((concept, index) => (
                 <Card key={index}>
                   <CardHeader className="p-6 pb-3">
@@ -864,7 +870,38 @@ export default function ProcessoSeletivoPage() {
                   </CardContent>
                 </Card>
               ))}
-            </div>
+            </ContentGrid>
+
+            <Card className="bg-gradient-to-br from-slate-50 to-slate-100 border border-slate-200 my-8">
+              <CardHeader>
+                <CardTitle className="text-lg font-semibold">
+                  Além da parte técnica
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="text-sm md:text-base space-y-4">
+                <p>
+                  <strong>1.</strong> Relação custo-benefício, seja em termos de
+                  tempo de desenvolvimento, custos, escalabilidade, performance,
+                  etc.
+                </p>
+                <p>
+                  <strong>2.</strong> Considerações sobre time-to-market (quanto
+                  antes a solução estiver no ar com clientes testando, melhor, a
+                  iteração rápida é essencial)
+                </p>
+                <p>
+                  <strong>3.</strong> Designs flexíveis que se adaptam às
+                  necessidades do negócio (é muito comum em startups criar MVPs
+                  com uma solução em mente mas ter que mudar completamente com o
+                  feedback do mercado)
+                </p>
+
+                <p>
+                  <strong>4.</strong> Soluções simples que minimizam o trabalho
+                  de manutenção
+                </p>
+              </CardContent>
+            </Card>
 
             <GradientHeading title="Na hora da entrevista" />
 
