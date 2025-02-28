@@ -31,7 +31,7 @@ export default function GuiaPage() {
   return (
     <>
       <PageHeader
-        title="Guia de Trabalho Remoto para Gringa"
+        title="Guia de Trabalho Remoto para fora"
         description="Dicas e orientações para profissionais brasileiros que desejam trabalhar remotamente para empresas no exterior."
       />
 

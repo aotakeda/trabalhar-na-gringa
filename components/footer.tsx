@@ -14,7 +14,7 @@ export function Footer() {
             </Link>
             <p className="mt-2 text-sm text-gray-600 max-w-md">
               Guia 100% gratuito pra você conseguir seu primeiro emprego pra
-              gringa.
+              fora.
             </p>
           </div>
 
@@ -40,7 +40,7 @@ export function Footer() {
               </a>
             </div>
             <p className="text-sm text-gray-500">
-              © {new Date().getFullYear()} Trabalhar na Gringa. Todos os
+              © {new Date().getFullYear()} Trabalhar pra Gringa. Todos os
               direitos reservados.
             </p>
           </div>

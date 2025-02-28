@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Trabalhe pra Gringa | Guia 100% gratuito",
+  title: "Trabalhe na Gringa | Guia pra devs 100% gratuito",
   description:
-    "Guia 100% gratuito pra você conseguir seu primeiro emprego pra gringa.",
+    "Guia 100% gratuito pra você conseguir seu primeiro emprego de dev pra fora.",
   keywords: [
     "trabalho remoto",
     "vagas internacionais",

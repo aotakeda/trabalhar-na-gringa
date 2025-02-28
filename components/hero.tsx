@@ -50,7 +50,7 @@ export function HeroSection() {
               transition={{ duration: 0.8, delay: 1.6 }}
             >
               Guia <span className="font-bold">100% gratuito</span> pra você
-              conseguir seu primeiro emprego pra gringa.
+              conseguir seu primeiro emprego de dev pra gringa.
             </motion.p>
 
             <motion.div

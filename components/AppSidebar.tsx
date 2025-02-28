@@ -65,7 +65,7 @@ export function AppSidebar() {
     <Sidebar collapsible="icon">
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Trabalhe pra Gringa</SidebarGroupLabel>
+          <SidebarGroupLabel>Trabalhe na Gringa</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
