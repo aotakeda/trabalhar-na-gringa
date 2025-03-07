@@ -1,4 +1,4 @@
-import { Briefcase, Globe, File } from "lucide-react";
+import { Briefcase, Globe, File, Building } from "lucide-react";
 import {
   PageHeader,
   FeatureCard,
@@ -10,6 +10,13 @@ import { Card } from "@/components/ui/card";
 
 export default function GuiaPage() {
   const guides = [
+    {
+      href: "/guia/curriculo",
+      icon: File,
+      title: "Dicas de Currículo",
+      description:
+        "Guia prático para criar um currículo para vagas em empresas estrangeiras",
+    },
     {
       href: "/guia/onde-e-como-encontrar-vagas",
       icon: Globe,
@@ -26,7 +33,7 @@ export default function GuiaPage() {
     },
     {
       href: "/guia/burocracias",
-      icon: File,
+      icon: Building,
       title: "Burocracias",
       description:
         "CNPJ, impostos, plano de saúde e outras questões administrativas",
@@ -40,7 +47,7 @@ export default function GuiaPage() {
         description="Dicas e orientações para profissionais brasileiros que desejam trabalhar remotamente para empresas no exterior."
       />
 
-      <ContentGrid columns={3} className="mt-8">
+      <ContentGrid columns={4} className="mt-8">
         {guides.map((guide) => (
           <FeatureCard
             key={guide.href}
@@ -77,8 +84,8 @@ export default function GuiaPage() {
       <div className="mt-12">
         <NavigationCard
           nextLink={{
-            href: "/guia/onde-e-como-encontrar-vagas",
-            title: "Onde e como encontrar vagas",
+            href: "/guia/curriculo",
+            title: "Dicas de Currículo",
           }}
         />
       </div>

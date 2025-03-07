@@ -1,4 +1,11 @@
-import { Briefcase, Globe, File, ChevronRight, Book } from "lucide-react";
+import {
+  Briefcase,
+  Globe,
+  File,
+  ChevronRight,
+  Book,
+  Building,
+} from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -23,6 +30,11 @@ const items = [
     title: "Onde e como encontrar vagas",
     url: "/guia/onde-e-como-encontrar-vagas",
     icon: Globe,
+  },
+  {
+    title: "Currículo",
+    url: "/guia/curriculo",
+    icon: File,
   },
   {
     title: "Processo seletivo",
@@ -51,7 +63,7 @@ const items = [
   {
     title: "Burocracias",
     url: "/guia/burocracias",
-    icon: File,
+    icon: Building,
     subItems: [
       { title: "Criando seu CNPJ", url: "/guia/burocracias#criando-seu-cnpj" },
       { title: "Impostos", url: "/guia/burocracias#impostos" },
