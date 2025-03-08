@@ -1,11 +1,4 @@
-import {
-  Briefcase,
-  Globe,
-  File,
-  ChevronRight,
-  Book,
-  Building,
-} from "lucide-react";
+import { Briefcase, Globe, File, Book, Building } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -27,14 +20,14 @@ const items = [
     icon: Book,
   },
   {
-    title: "Onde e como encontrar vagas",
-    url: "/guia/onde-e-como-encontrar-vagas",
-    icon: Globe,
-  },
-  {
     title: "Currículo e LinkedIn",
     url: "/guia/curriculo",
     icon: File,
+  },
+  {
+    title: "Onde e como encontrar vagas",
+    url: "/guia/onde-e-como-encontrar-vagas",
+    icon: Globe,
   },
   {
     title: "Processo seletivo",

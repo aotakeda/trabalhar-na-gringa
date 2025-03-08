@@ -144,8 +144,8 @@ export default function OndeEncontrarVagasPage() {
       <div className="mt-12">
         <NavigationCard
           prevLink={{
-            href: "/guia",
-            title: "Guia",
+            href: "/guia/curriculo",
+            title: "Currículo e LinkedIn",
           }}
           nextLink={{
             href: "/guia/processo-seletivo",
