@@ -47,7 +47,7 @@ export default function GuiaPage() {
         description="Dicas e orientações para profissionais brasileiros que desejam trabalhar remotamente para empresas no exterior."
       />
 
-      <ContentGrid columns={4} className="mt-8">
+      <ContentGrid columns={2} className="mt-8">
         {guides.map((guide) => (
           <FeatureCard
             key={guide.href}
