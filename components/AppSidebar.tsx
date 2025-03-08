@@ -32,7 +32,7 @@ const items = [
     icon: Globe,
   },
   {
-    title: "Currículo",
+    title: "Currículo e LinkedIn",
     url: "/guia/curriculo",
     icon: File,
   },
