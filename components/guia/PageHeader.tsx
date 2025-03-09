@@ -1,5 +1,6 @@
 import React from "react";
 import { Separator } from "../ui/separator";
+import GitHubStarButton from "./GithubStarButton";
 
 interface PageHeaderProps {
   title: string;
@@ -13,6 +14,8 @@ export function PageHeader({ title, description }: PageHeaderProps) {
         {title}
       </h1>
       <p className="text-muted-foreground md:text-lg">{description}</p>
+
+      <GitHubStarButton />
       <Separator className="my-8" />
     </div>
   );
