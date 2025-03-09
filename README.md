@@ -6,9 +6,9 @@ Este é o repositório do projeto **Trabalhe na Gringa** - um guia completo e **
 
 O conteúdo (em constante evolução) é baseado no meu próprio aprendizado e experiência (com recrutamento e como dev trabalhando pra fora).
 
-- [Currículo e LinkedIn](https://devremoto.com.br/guia/curriculo-e-linkedin)
+- [Currículo e LinkedIn](https://devremoto.com.br/guia/curriculo)
 - [Onde e como encontrar vagas](https://devremoto.com.br/guia/onde-e-como-encontrar-vagas)
-- [Como se preparar para processos seletivos](https://devremoto.com.br/guia/como-se-preparar-para-processos-seletivos)
+- [Como se preparar para processos seletivos](https://devremoto.com.br/guia/processo-seletivo)
 - [Burocracias](https://devremoto.com.br/guia/burocracias)
 
 ## Por quê criei esse guia?
