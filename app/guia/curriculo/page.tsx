@@ -1,3 +1,4 @@
+import React from "react";
 import {
   FileText,
   Award,
@@ -9,6 +10,7 @@ import {
   Star,
   Linkedin,
   Settings,
+  FileEdit,
 } from "lucide-react";
 import {
   PageHeader,
@@ -17,12 +19,19 @@ import {
   FeatureCard,
   ContentGrid,
   NavigationCard,
+  EditableCVWrapper,
 } from "@/components/guia";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { TipsList } from "@/components/guia/TipsList";
 
 export default function CurriculoPage() {
   const sections = [
+    {
+      id: "editor-de-cv",
+      icon: FileEdit,
+      title: "Editor de CV Interativo",
+      description: "Editor interativo para criar seu currículo internacional",
+    },
     {
       id: "estrutura-basica",
       icon: FileText,
@@ -58,9 +67,9 @@ export default function CurriculoPage() {
 
   const estruturaBasica = [
     "Informações de contato (nome, e-mail, LinkedIn, GitHub)",
-    "Professional Summary (resumo profissional em inglês)",
-    "Experiência Profissional (com stack)",
-    "Formação Acadêmica",
+    "Summary (resumo profissional em inglês)",
+    "Professional Experience",
+    "Formação Acadêmica (opcional)",
     "Certificações (opcional)",
     "Projetos relevantes (opcional)",
   ];
@@ -149,7 +158,7 @@ export default function CurriculoPage() {
           estrangeiras.
         </p>
 
-        <ContentGrid columns={2} className="my-8">
+        <ContentGrid columns={3} className="my-8">
           {sections.map((section) => (
             <FeatureCard
               key={section.id}
@@ -168,6 +177,17 @@ export default function CurriculoPage() {
             responsabilidades.
           </p>
         </InfoAlert>
+
+        <GradientHeading title="Modelo de Currículo" />
+
+        <p>
+          Use nossa ferramenta interativa para criar um currículo profissional
+          seguindo as melhores práticas para vagas internacionais.
+        </p>
+
+        <div className="my-6">
+          <EditableCVWrapper />
+        </div>
 
         <GradientHeading
           title="Estrutura Básica"

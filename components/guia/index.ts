@@ -7,3 +7,4 @@ export * from "./SectionCard";
 export * from "./ContentGrid";
 export * from "./QuestionCard";
 export * from "./NavigationCard";
+export { default as EditableCVWrapper } from "./EditableCVWrapper";
