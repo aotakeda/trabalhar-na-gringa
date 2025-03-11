@@ -21,6 +21,7 @@
     "lucide-react": "^0.476.0",
     "motion": "^12.4.7",
     "next": "15.1.7",
+    "pako": "^2.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^3.0.2",
