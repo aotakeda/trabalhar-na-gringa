@@ -417,22 +417,28 @@ const EditableCV = () => {
             <DialogTrigger asChild>
               <Button variant="destructive">Resetar</Button>
             </DialogTrigger>
-            <DialogContent>
+            <DialogContent className="sm:max-w-md">
               <DialogHeader>
-                <DialogTitle>Resetar CV</DialogTitle>
-                <DialogDescription>
+                <DialogTitle className="text-center">Resetar CV</DialogTitle>
+                <DialogDescription className="text-center px-1">
                   Tem certeza? Os dados que você inseriu serão perdidos. Esta
                   ação não pode ser revertida.
                 </DialogDescription>
               </DialogHeader>
-              <DialogFooter className="flex space-x-2 justify-end">
-                <DialogClose asChild>
-                  <Button variant="outline">Cancelar</Button>
-                </DialogClose>
-                <Button variant="destructive" onClick={resetCV}>
+              <div className="grid gap-3 py-4">
+                <Button
+                  variant="destructive"
+                  onClick={resetCV}
+                  className="w-full"
+                >
                   Sim, resetar
                 </Button>
-              </DialogFooter>
+                <DialogClose asChild>
+                  <Button variant="outline" className="w-full">
+                    Cancelar
+                  </Button>
+                </DialogClose>
+              </div>
             </DialogContent>
           </Dialog>
           {typeof window !== "undefined" && showPDF && (
