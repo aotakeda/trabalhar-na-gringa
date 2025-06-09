@@ -133,6 +133,10 @@ export default function BurocraciasPage() {
             href: "/guia/processo-seletivo",
             title: "Processo seletivo",
           }}
+          nextLink={{
+            href: "/guia/ingles",
+            title: "Inglês",
+          }}
         />
       </div>
     </>
