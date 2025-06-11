@@ -1,4 +1,4 @@
-import { Briefcase, Globe, File, Building } from "lucide-react";
+import { Briefcase, Globe, File, Building, Languages, ClipboardList } from "lucide-react";
 import {
   PageHeader,
   FeatureCard,
@@ -38,6 +38,19 @@ export default function GuiaPage() {
       description:
         "CNPJ, impostos, plano de saúde e outras questões administrativas",
     },
+    {
+      href: "/guia/ingles",
+      icon: Languages,
+      title: "Inglês",
+      description:
+        "Guia prático e estratégias para melhorar seu inglês",
+    },
+    {
+      icon: ClipboardList,
+      title: "Dicas de Organização (em breve)",
+      description:
+        "Guia prático para organizar e acompanhar seus processos seletivos.",
+    },
   ];
 
   return (
@@ -50,7 +63,7 @@ export default function GuiaPage() {
       <ContentGrid columns={2} className="mt-8">
         {guides.map((guide) => (
           <FeatureCard
-            key={guide.href}
+            key={guide.title}
             href={guide.href}
             icon={guide.icon}
             title={guide.title}
@@ -77,6 +90,9 @@ export default function GuiaPage() {
             Navegue pelas seções para encontrar informações detalhadas sobre
             cada etapa do processo, desde a busca por vagas até as questões
             burocráticas após a contratação.
+          </p>
+          <p className="text-muted-foreground">
+            Alguns dos conteúdos apresentados foram elaborados por terceiros. Para assegurar o devido reconhecimento, os nomes dos autores estão destacados em negrito e vinculados às fontes originais.
           </p>
         </CardContent>
       </Card>

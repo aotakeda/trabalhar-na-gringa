@@ -1,4 +1,4 @@
-import { Briefcase, Globe, File, Book, Building } from "lucide-react";
+import { Briefcase, Globe, File, Book, Building, Languages } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -61,6 +61,16 @@ const items = [
       { title: "Criando seu CNPJ", url: "/guia/burocracias#criando-seu-cnpj" },
       { title: "Impostos", url: "/guia/burocracias#impostos" },
       { title: "Plano de saúde", url: "/guia/burocracias#plano-de-saúde" },
+    ],
+  },
+    {
+    title: "Inglês",
+    url: "/guia/ingles",
+    icon: Languages,
+    subItems: [
+      { title: "Quanto tempo vou levar ?", url: "/guia/ingles#quanto-tempo-leva" },
+      { title: "Comece aqui", url: "/guia/ingles#comece-aqui" },
+      { title: "Próximos passos", url: "/guia/ingles#primeiros-passos" },
     ],
   },
 ];

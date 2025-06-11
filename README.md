@@ -10,6 +10,7 @@ O conteúdo (em constante evolução) é baseado no meu próprio aprendizado e e
 - [Onde e como encontrar vagas](https://devremoto.com.br/guia/onde-e-como-encontrar-vagas)
 - [Como se preparar para processos seletivos](https://devremoto.com.br/guia/processo-seletivo)
 - [Burocracias](https://devremoto.com.br/guia/burocracias)
+- [Inglês](https://devremoto.com.br/guia/ingles)
 
 ## Por quê criei esse guia?
 
